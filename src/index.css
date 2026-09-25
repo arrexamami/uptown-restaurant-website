@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #f4f0e8;
+  background-color: #111014;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(198, 154, 74, 0.07), transparent 35%),
+    #111014;
+  color: #f4f0e8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+@layer components {
+  .container-shell {
+    @apply max-w-[1280px] mx-auto px-4 md:px-6;
+  }
+
+  .kar-text {
+    @apply text-ivory;
+  }
+
+  .gold-line {
+    @apply border border-gold/80;
+  }
+
+  .grain-bg {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 14px 14px;
+  }
+
+  .luxury-border {
+    border: 1px solid rgba(198, 154, 74, 0.45);
+  }
+
+  .section-label {
+    @apply uppercase tracking-[0.18em] text-[10px] text-gold/90;
+  }
+
+  .card-surface {
+    @apply bg-[#121217] border border-white/5 shadow-card;
+  }
+}
